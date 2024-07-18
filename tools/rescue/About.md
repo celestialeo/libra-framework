@@ -28,10 +28,12 @@ The twin setup process involves:
 - **TwinSetup**: Trait with various async functions for initializing and configuring the twin environment.
 
 #### Initialization and Configuration
+
 - **initialize_marlon_the_val**: Sets up a new validator using a temporary swarm.
 - **register_marlon_tx**: Creates a registration transaction for the validator.
 - **make_rescue_twin_blob**: Generates a rescue blob with the provided validator credentials.
 - **apply_with_rando_e2e**: Main function that:
+- 
     1. Sets up a new validator set.
     2. Replaces the swarm database with the cloned production database.
     3. Applies the rescue blob to the swarm database.
@@ -39,6 +41,7 @@ The twin setup process involves:
     5. Ensures the twin network is operational and healthy.
 
 #### Maintenance and Operation
+
 - **extract_credentials**: Extracts and returns validator credentials from a node.
 - **clone_db**: Copies the production database to the test database.
 - **wait_for_node**: Waits for nodes to reach a healthy and connected state.
